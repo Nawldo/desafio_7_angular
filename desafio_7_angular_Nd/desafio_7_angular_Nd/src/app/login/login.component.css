@@ -1,0 +1,76 @@
+/* Estilos para a página de login */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+
+  background-image: url('/assets/imagens/ford-nald-3.jpg'); /* Caminho para imagem de fundo */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay; /* Mistura a imagem com a cor de fundo */
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura para o overlay */
+
+  padding: 20px;
+  box-sizing: border-bclox;
+}
+
+/* Estilo para o container do formulário */
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 550px; /* Largura máxima do formulário */
+  width: 100%;
+  z-index: 1;
+}
+
+/* --- NOVOS ESTILOS ADICIONADOS AQUI --- */
+
+/* Estilo para a imagem da logo */
+.login-logo {
+  max-width: 150px; /* Ajuste o tamanho máximo da logo */
+  height: auto; /* Mantém a proporção */
+  display: block; /* Garante que a imagem se comporte como um bloco para centralização */
+  margin: 0 auto 15px auto; /* Centraliza a logo e adiciona margem inferior */
+}
+
+/* Estilos para o cabeçalho do cartão (ajustado para a nova estrutura com logo) */
+.card-header {
+  background-color: transparent; /* Fundo transparente para a logo aparecer melhor */
+  color: #007bff; /* Cor do texto (Bem-vindo) */
+  border-bottom: none; /* Remove a linha de baixo do cabeçalho se não quiser */
+  padding: 0; /* Remove padding padrão para controlar com a logo */
+  margin-bottom: 15px; /* Margem abaixo do cabeçalho */
+}
+
+.card-header h3 {
+    margin-top: 10px; /* Espaçamento entre a logo e o texto "Bem-vindo" */
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte se necessário */
+    color: #343a40; /* Cor do texto "Bem-vindo" */
+}
+
+/* Estilo para o corpo do cartão */
+.card-body {
+  padding: 20px;
+}
+
+/* Ajustes para elementos do formulário */
+.form-label {
+    font-weight: bold;
+}
+
+.alert {
+    text-align: center;
+}
+
+/* Estilo para o checkbox "Logar automaticamente" */
+.form-check {
+    text-align: left; /* Alinha o checkbox à esquerda dentro do seu container */
+    margin-top: 15px; /* Espaçamento acima do checkbox */
+    margin-bottom: 20px; /* Espaçamento abaixo do checkbox */
+}
